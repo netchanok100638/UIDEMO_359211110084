@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #18ffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #18ffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Pane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #00cbcc;">
          <children>
@@ -27,11 +27,10 @@
             <Image url="@../Image/lock_password_protection_secure_key-512.png" />
          </image>
       </ImageView>
-      <Label layoutX="343.0" layoutY="14.0" prefHeight="17.0" prefWidth="242.0" />
+      <Label fx:id="loginStatus" layoutX="343.0" layoutY="14.0" prefHeight="17.0" prefWidth="242.0" />
       <Label layoutX="335.0" layoutY="357.0" text="DBStatus:" />
-      <Label layoutX="405.0" layoutY="357.0" prefHeight="17.0" prefWidth="170.0" />
-      <PasswordField layoutX="397.0" layoutY="144.0" promptText="Password" />
-      <Label layoutX="398.0" layoutY="84.0" prefHeight="25.0" prefWidth="149.0" text="Username" />
+      <Label fx:id="dbStatus" layoutX="405.0" layoutY="357.0" prefHeight="17.0" prefWidth="170.0" />
+      <PasswordField fx:id="password" layoutX="397.0" layoutY="144.0" promptText="Password" />
 
         </children>
 
