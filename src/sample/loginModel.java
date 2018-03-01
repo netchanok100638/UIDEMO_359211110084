@@ -49,6 +49,5 @@ public class loginModel {
             rs.close();
         }
 
-
     }//isLogin
 }//class
