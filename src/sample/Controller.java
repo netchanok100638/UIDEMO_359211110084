@@ -85,4 +85,11 @@ public class Controller implements Initializable{
     }//adminDashboard
 
 
+    public void setBtnLogin(JFXButton btnLogin) {
+        this.btnLogin = btnLogin;
+    }
+
+    public void setUsername(JFXTextField username) {
+        this.username = username;
+    }
 }//class
